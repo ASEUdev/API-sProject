@@ -18,7 +18,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <th>Valor</th>
                 <th>Ciudad</th>
                 <th>Pago</th>
-                <th></th>
             </tr>';
 
             foreach ($dataArray as $item) {
