@@ -1,0 +1,134 @@
+body{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 4%, rgba(18,21,85,1) 49%, rgba(12,17,71,1) 100%);
+
+}
+h1{
+    color: azure;
+
+}
+.contenedor{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.contenedor .card{
+    position: relative;
+    width: 500px;
+    height:230px ;
+    padding: 15px;
+    background:  linear-gradient(90deg, rgb(41, 24, 136) 4%, rgb(19, 26, 150) 49%, rgb(20, 32, 139) 100%);
+    overflow: hidden;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+
+}
+.contenedor .card h2{
+    z-index: 99;
+    position: absolute;
+    bottom: 25px;
+    right: 130px;
+    font-size: 50px;
+    font-weight: 700;
+    color: azure;
+    /* pointer-events: none; */
+    transition: o.2s ease;
+    text-shadow: 0 0 15px rgba(0,0,0,0.3);
+    
+}
+.contenedor .card p{
+    z-index: 99;
+    position: absolute;
+    bottom: 30px;
+    right: 130px;
+    width: 150px;
+    color: azure;
+    opacity: 0;
+    font-size: 12px;
+    text-align: right;
+    letter-spacing: 1px;
+    transition: 0.2s ease;
+
+}
+.contenedor .card span{
+    z-index: 99;
+    position: absolute;
+    top: 60px;
+    right: 35px;
+    color: azure;
+    font-size: 12px;
+    letter-spacing: 1px;
+    writing-mode: vertical-lr;
+    transition: 0.2s ease;
+    opacity: 0.7;
+
+}
+.contenedor .card .pic{
+    z-index: 100;
+    width: 395px;
+    height: 200px;
+    background-image:url(sancion.jpeg) ;
+    background-size: cover;
+    border-radius: 12px;
+    filter: grayscale(100%);
+    transition: 0,3s ease;
+
+}
+.contenedor .card button{
+    position: absolute;
+    right: 30px;
+    bottom: 40px;
+    height: 30px;
+    width: 30px;
+    background-color: #772a9b;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+    opacity: 1;
+    transition: 0.3s ease;
+
+}
+.contenedor .card:hover button{
+    transform: scale(16.5);
+    opacity: 0.5;
+
+}
+.contenedor .card:hover h2{
+    bottom: 80px;
+    right: 50px;
+
+}
+.contenedor .card:hover p{
+    opacity: 1;
+    right: 60px;
+
+}
+.contenedor .card:hover span{
+    opacity: o;
+    top: 80px;
+
+}
+.contenedor .card:hover .pic{
+    filter: grayscale(0);
+    width: 470px;
+
+}
+.contenedor .card2 .pic{
+    background-image: url(comparendos-bogota.jpg) ;
+    transition: 0.3s ease;
+}
+.contenedor .card2 button{
+    background-color: #26c3a1;
+}
+a{
+    text-decoration: none;
+    
+}
+h2{
+    color: rgb(240, 255, 255);
+}
